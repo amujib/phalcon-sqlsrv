@@ -256,9 +256,7 @@ class Sqlsrv extends AbstractPdo
             /*
              * Check if the column allows null values
              */
-            if ($field['NULLABLE'] == 0) {
-                $definition['notNull'] = true;
-            }
+            $definition['notNull'] = !$field['NULLABLE'];
 
             /*
              * Check if the column is auto increment
