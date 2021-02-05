@@ -560,7 +560,7 @@ class Sqlsrv extends AbstrctDialect
 
         $sql .= implode(",\n\t", $createLines) . "\n)";
         if (isset($definition['options'])) {
-            $sql .= ' ' . $this->_getTableOptions($definition);
+            $sql .= ' ' . $this->getTableOptions($definition);
         }
 
         return $sql;
@@ -792,7 +792,7 @@ class Sqlsrv extends AbstrctDialect
      *
      * @return string
      */
-    protected function _getTableOptions($definition) : string
+    protected function getTableOptions($definition) : string
     {
         if (isset($definition['options']) === true) {
             $tableOptions = [];
