@@ -16,8 +16,8 @@
         "email": "support@phalconphp.com"
     },
     "require": {
-        "php": ">=7.0",
-        "ext-phalcon": ">=3.0.0"
+        "php": ">=7.1",
+        "ext-phalcon": ">=5.0.0"
     },
     "require-dev": {
         "codeception/verify": "*"

@@ -1,6 +1,7 @@
 /vendor/
 ._*
 .ssh/
+.idea/
 .viminfo
 .bash*
 .env*

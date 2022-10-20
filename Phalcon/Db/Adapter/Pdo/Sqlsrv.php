@@ -32,11 +32,11 @@ class Sqlsrv extends AbstractPdo
      *
      * @param array $descriptor
      *
-     * @return bool
+     * @return void
      */
-    public function connect(array $descriptor = null) : bool
+    public function connect(array $descriptor = null) : void
     {
-        if (is_null($descriptor) === true) {
+        if (empty($descriptor) === true) {
             $descriptor = $this->descriptor;
         }
 
@@ -74,7 +74,6 @@ class Sqlsrv extends AbstractPdo
             $this->dialect = $dialectObject;
         }
 
-        return true;
     }
 
     /**

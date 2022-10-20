@@ -3,14 +3,14 @@
 namespace Phalcon\Db\Dialect;
 
 use Phalcon\Db\Column;
-use Phalcon\Db\Dialect as AbstrctDialect;
+use Phalcon\Db\Dialect as AbstractDialect;
 use Phalcon\Db\Exception;
 
 /**
  * Phalcon\Db\Dialect\Sqlsrv
  * Generates database specific SQL for the MsSQL RDBMS.
  */
-class Sqlsrv extends AbstrctDialect
+class Sqlsrv extends AbstractDialect
 {
     /**
      * Escape Char.
